@@ -1,0 +1,166 @@
+:root {
+  --body-text-color: #212121;
+  --image-text-color: #757575;
+  --background-botton-color: #2196f3;
+  --white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: Roboto, Open-Sans;
+  font-weight: 400;
+  color: var(--body-text-color);
+}
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.our-work {
+  visibility: hidden;
+}
+.footer-background-color {
+  background-color: var(--footer-background-color);
+}
+.header {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.header-color-contacts {
+  color: #757575;
+}
+.header-color-contacts:hover {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.hero {
+  background-color: var(--footer-background-color);
+  color: var(--white-color);
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  font-weight: 900;
+  font-style: normal;
+}
+.contacts {
+  color: var(--footer-contacts-color);
+}
+.contacts:hover {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.menu-portfolio {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.menu-portfolio:hover {
+  color: var(--white-color);
+  background-color: var(--background-botton-color);
+}
+.menu-portfolio:focus {
+  color: var(--white-color);
+  background-color: var(--background-botton-color);
+}
+.small-text-image {
+  color: var(--image-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.big-text-image {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--body-text-color);
+  font-family: Raleway;
+}
+.color-logo {
+  color: var(--background-botton-color);
+}
+.footer {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.footer-color {
+  color: var(--white-color);
+}
+.footer-color:hover {
+  color: var(--background-botton-color);
+}
+.footer-color:focus {
+  color: var(--background-botton-color);
+}
+.menu-color {
+  color: var(--body-text-color);
+}
+.menu-color:hover {
+  color: var(--background-botton-color);
+}
+.menu-color:focus {
+  color: var(--background-botton-color);
+}
+.back-color {
+  background-color: var(--background-botton-color);
+}
+.index-bottom-oreder-servise {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--background-botton-color);
+  color: var(--white-color);
+  font-family: inherit;
+}
+.index-smoll-text {
+  color: var(--image-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.title-h2 {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  font-weight: 700;
+}
+.title-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.team {
+  background: #f5f4fa;
+}
+.name-workers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.profession-worker {
+  color: var(--image-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+.store-active {
+  color: var(--background-botton-color);
+}
