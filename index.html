@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,8 +17,8 @@
 
   <body>
     <header>
-      <div class="container">
-        <a href="./index.html" class="logo"
+      <div class="container container-header">
+        <a href="./index.html" class="all-logo"
           ><span class="color-logo">Web</span><span class="logo">Studio</span></a
         >
         <nav>
@@ -29,11 +32,9 @@
             <li class="header"><a href="" class="menu-color"> Контакты</a></li>
           </ul>
         </nav>
-        <ul>
+        <ul class="adress-header">
           <li class="header">
-            <a href="mailto:info@devstudio.com" class="header-color-contacts">
-              info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="header-color-contacts">info@devstudio.com</a>
           </li>
           <li class="header">
             <a href="tel:+38 096 111 11 11" class="header-color-contacts">+38 096 111 11 11</a>
@@ -43,7 +44,7 @@
     </header>
     <main>
       <!--Заказ услуг-->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1>Ефективные решения для вашего бизнеса</h1>
           <button name="button" type="button" class="index-bottom-oreder-servise">
@@ -52,9 +53,9 @@
         </div>
       </section>
       <!---Что мы  делаем-->
-      <section>
+      <section class="section">
         <div class="container">
-          <ul>
+          <ul class="what-we-do">
             <li>
               <h3 class="title-h3">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
               <p class="index-smoll-text">
@@ -83,7 +84,7 @@
         </div>
       </section>
       <!--Робочий процес-->
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="title-h2">Чем мы занимаемся</h2>
           <ul>
@@ -110,7 +111,7 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="title-h2">Наша команда</h2>
           <ul>
