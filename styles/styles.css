@@ -11,12 +11,10 @@ body {
   font-weight: 400;
   color: var(--body-text-color);
 }
+
+/* ---------------------------------------------Загальні----- */
 li {
   list-style-type: none;
-}
-ul {
-  margin-left: 0;
-  padding-left: 0;
 }
 a {
   text-decoration: none;
@@ -36,6 +34,8 @@ nav {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 div.container-header {
   display: flex;
@@ -45,17 +45,21 @@ div.container-header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* ---------------------------------------------ВСЕ ДЛЯ ХЕДЕРА---- */
+.store-active {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--background-botton-color);
+}
 .header {
   height: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
 }
-.adress-header {
-  display: flex;
-  flex-direction: row;
-}
-.adress-header li.header + li.header {
-  padding-left: 50px;
-}
-
 .logo {
   font-size: 26px;
   line-height: 1.2;
@@ -84,20 +88,6 @@ div.container-header {
 .menu li.header + li.header {
   padding-left: 50px;
 }
-.menu-portfolio {
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: Roboto;
-  font-weight: 500;
-}
-.menu-portfolio:hover {
-  color: var(--white-color);
-  background-color: var(--background-botton-color);
-}
-.menu-portfolio:focus {
-  color: var(--white-color);
-  background-color: var(--background-botton-color);
-}
 .menu-color {
   display: block;
   padding-top: 32px;
@@ -112,16 +102,35 @@ div.container-header {
   color: var(--background-botton-color);
 }
 
-.our-work {
-  visibility: hidden;
-}
-.footer-background-color {
-  background-color: var(--footer-background-color);
-}
-.header {
-  font-size: 14px;
+/*-------------------------------------------- Меню для сторінки ПОРТФОЛІО */
+.menu-portfolio {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Roboto;
   font-weight: 500;
-  line-height: 1.15;
+}
+.menu-portfolio:hover,
+.menu-portfolio:focus {
+  color: var(--white-color);
+  background-color: var(--background-botton-color);
+}
+
+/* ----------------------------------------------КОНТАКТИ */
+.adress-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.adress-header li.header + li.header {
+  padding-left: 50px;
+}
+.contacts {
+  color: var(--footer-contacts-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
 }
 .header-color-contacts {
   display: block;
@@ -138,7 +147,11 @@ div.container-header {
   color: var(--background-botton-color);
   cursor: pointer;
 }
+
+/*-------------------------------------------- СЕКЦІЯ ГЕРОЙ */
 .hero {
+  height: 600px;
+
   background-color: var(--footer-background-color);
   color: var(--white-color);
   font-size: 44px;
@@ -147,56 +160,16 @@ div.container-header {
   font-weight: 900;
   font-style: normal;
 }
-.contacts {
-  color: var(--footer-contacts-color);
+.container-hero {
 }
-.contacts:hover,
-.contacts:focus {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-.menu-portfolio {
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: Roboto;
-  font-weight: 500;
-}
-.menu-portfolio:hover {
-  color: var(--white-color);
-  background-color: var(--background-botton-color);
-}
-.menu-portfolio:focus {
-  color: var(--white-color);
-  background-color: var(--background-botton-color);
-}
-
-.small-text-image {
-  color: var(--image-text-color);
-  font-size: 16px;
-  line-height: 1.8;
-}
-.big-text-image {
-  font-size: 18px;
-  line-height: 2;
-  font-weight: 700;
-}
-
-.footer {
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
-.footer-color {
-  color: var(--white-color);
-}
-.footer-color:hover,
-.footer-color:focus {
-  color: var(--background-botton-color);
-}
-.back-color {
-  background-color: var(--background-botton-color);
+.h1 {
+  margin-top: 106px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .index-bottom-oreder-servise {
+  margin-bottom: 106px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -204,11 +177,42 @@ div.container-header {
   color: var(--white-color);
   font-family: inherit;
 }
+.index-bottom-oreder-servise:hover,
+.index-bottom-oreder-servise:focus {
+  color: var(--background-botton-color);
+}
+/* ----------------------------------------------Що ми робимо index + porfolio */
+
+.what-we-do {
+  display: flex;
+}
+.item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.item:nth-child(4n) {
+  margin-right: 0;
+}
 .index-smoll-text {
   color: var(--image-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
+.small-text-image {
+  color: var(--image-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.our-work {
+  visibility: hidden;
+}
+
+.big-text-image {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
 .title-h2 {
   font-size: 36px;
   line-height: 1.16;
@@ -233,10 +237,23 @@ div.container-header {
   font-size: 16px;
   line-height: 1.18;
 }
-.store-active {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
+/* ---------------------------------------------ВСЕ ДЛЯ ФУТЕРА */
+.footer {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.footer-color {
+  color: var(--white-color);
+}
+.footer-color:hover,
+.footer-color:focus {
   color: var(--background-botton-color);
+}
+.footer-background-color {
+  background-color: var(--footer-background-color);
+}
+.back-color {
+  background-color: var(--background-botton-color);
 }
