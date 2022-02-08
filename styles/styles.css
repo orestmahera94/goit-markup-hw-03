@@ -278,9 +278,19 @@ div.container-header {
 
 /* ---------------------------------------------ВСЕ ДЛЯ ФУТЕРА */
 .footer {
+  display: block;
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+}
+.container-footer {
+  height: 252px;
+}
+.footer-logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .footer-color {
   color: var(--white-color);
