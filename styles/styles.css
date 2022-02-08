@@ -160,8 +160,6 @@ div.container-header {
   font-weight: 900;
   font-style: normal;
 }
-.container-hero {
-}
 .h1 {
   margin-top: 106px;
   margin-left: auto;
@@ -206,14 +204,28 @@ div.container-header {
 .our-work {
   visibility: hidden;
 }
-
 .big-text-image {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
 }
-
+/* --------------------------------------------------фото робочого процесу */
+.section-semples {
+  padding-top: 0;
+}
+.photo-work-proces {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-item {
+  margin-right: 30px;
+}
+.photo-item:nth-child(3n) {
+  margin-right: 0;
+}
 .title-h2 {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -224,15 +236,41 @@ div.container-header {
   font-size: 14px;
   line-height: 1.14;
 }
+/* ---------------------------------------------------Наша команда */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person {
+  display: block;
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white-color);
+}
+.person:nth-child(4n) {
+  margin-right: 0;
+}
 .team {
   background: #f5f4fa;
 }
+.image-class {
+  width: 100%;
+}
 .name-workers {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .profession-worker {
+  padding-bottom: 30px;
+  text-align: center;
+
   color: var(--image-text-color);
   font-size: 16px;
   line-height: 1.18;
