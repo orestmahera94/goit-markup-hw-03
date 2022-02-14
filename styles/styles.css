@@ -162,8 +162,6 @@ div.container-header {
 
 /*-------------------------------------------- СЕКЦІЯ ГЕРОЙ */
 .hero {
-  height: 600px;
-
   background-color: var(--footer-background-color);
   color: var(--white-color);
   font-size: 44px;
@@ -176,16 +174,33 @@ div.container-header {
   margin-top: 106px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
 }
 .index-bottom-oreder-servise {
   margin-bottom: 106px;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   background-color: var(--background-botton-color);
   color: var(--white-color);
   font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .index-bottom-oreder-servise:hover,
 .index-bottom-oreder-servise:focus {
