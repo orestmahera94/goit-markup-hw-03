@@ -127,6 +127,7 @@ div.container-header {
   line-height: 1.6;
   font-family: Roboto;
   font-weight: 500;
+  background-color: #f5f4fa;
 }
 .menu-portfolio:hover,
 .menu-portfolio:focus {
@@ -289,8 +290,8 @@ div.container-header {
   margin-right: 0;
 }
 .person-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team {
   background: #f5f4fa;
@@ -385,7 +386,7 @@ div.container-header {
 .footer-logo {
   display: block;
 
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-color {
   color: var(--white-color);
